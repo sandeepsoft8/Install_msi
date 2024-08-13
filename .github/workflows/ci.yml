@@ -36,3 +36,7 @@ jobs:
     - name: Install MSI
       run: |
         msiexec /i D:\a\Install_msi\Install_msi\Firefox Setup 129.0.1.msi
+
+    - name: Verify URL
+      run: |
+        invoke-webrequest https://firefox.com
