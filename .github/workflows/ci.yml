@@ -18,10 +18,10 @@ jobs:
       with:
           ref: ${{ github.head_ref }}
 
-    - name: Sanity check
-      run: |
-        Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
-        pwd   
+    # - name: Sanity check
+    #   run: |
+    #     Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+    #     pwd   
 
     - name: Download MSI
       shell: pwsh
