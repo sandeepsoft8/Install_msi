@@ -1,0 +1,27 @@
+name: MSI Installation
+ 
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+ 
+jobs:
+  build:
+ 
+    runs-on: self-hosted
+ 
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+      with:
+          ref: ${{ github.head_ref }}
+
+    - name: Directory for Download
+      run: |
+        cd D:\MSI    
+
+    - name: Download MSI
+      run: |
+        Invoke-WebRequest -Uri "https://o365sonata-my.sharepoint.com/personal/bharat_kumar_sonata-software_com/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fbharat%5Fkumar%5Fsonata%2Dsoftware%5Fcom%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2FHelloWorld1%201%201%2Emsi"
+      shell: pwsh 
