@@ -10,17 +10,17 @@ on:
 jobs:
   build:
  
-    runs-on: windows-latest
+    runs-on: self-hosted
  
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
-    - name: Set PowerShell Execution Policy
-      # shell: powershell
-      run: |
-        Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
-        Write-Host "Execution policy set to Bypass for this session."      
+    # - name: Set PowerShell Execution Policy
+    #   # shell: powershell
+    #   run: |
+    #     Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
+    #     Write-Host "Execution policy set to Bypass for this session."      
 
     - name: Sanity check
       # shell: powershell
