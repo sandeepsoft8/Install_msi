@@ -30,4 +30,4 @@ jobs:
     - name: Download MSI
       # shell: powershell
       run: |
-        Invoke-WebRequest -Uri "https://o365sonata-my.sharepoint.com/personal/bharat_kumar_sonata-software_com/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fbharat%5Fkumar%5Fsonata%2Dsoftware%5Fcom%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2FHelloWorld1%201%201%2Emsi"
+        Invoke-WebRequest -Uri "https://download.mozilla.org/?product=firefox-msi-latest-ssl&os=win64&lang=en-US&attribution_code=c291cmNlPXN0YXRpY3MudGVhbXMuY2RuLm9mZmljZS5uZXQmbWVkaXVtPXJlZmVycmFsJmNhbXBhaWduPShub3Qgc2V0KSZjb250ZW50PShub3Qgc2V0KSZleHBlcmltZW50PShub3Qgc2V0KSZ2YXJpYXRpb249KG5vdCBzZXQpJnVhPWVkZ2UmY2xpZW50X2lkX2dhND0xOTg2MzI5NDk3LjE3MjM1Nzc2MzUmc2Vzc2lvbl9pZD04MTAwODkwMTk5JmRsc291cmNlPW1vem9yZw..&attribution_sig=ae218bbfa9a762677533305a0a9f1ace348954441e459bcec36761aca18d406a&_gl=1*rw6u1v*_ga*MTk4NjMyOTQ5Ny4xNzIzNTc3NjM1*_ga_MQ7767QQQW*MTcyMzU3NzYzNC4xLjAuMTcyMzU3NzYzNS4wLjAuMA.."
