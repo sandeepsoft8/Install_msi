@@ -17,11 +17,11 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Sanity check
+      shell: powershell
       run: |
         pwd   
 
     - name: Download MSI
-      shell: pwsh
+      shell: powershell
       run: |
         Invoke-WebRequest -Uri "https://o365sonata-my.sharepoint.com/personal/bharat_kumar_sonata-software_com/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fbharat%5Fkumar%5Fsonata%2Dsoftware%5Fcom%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2FHelloWorld1%201%201%2Emsi"
-            
